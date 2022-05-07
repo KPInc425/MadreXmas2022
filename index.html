@@ -4,28 +4,170 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./styles.css">
     <title>Admin Dashboard</title>
 </head>
 <body>
     <div class="wrapper">
         <div class="menu">
-            <!-- <img src="" alt="Menu Icon">
-            <h1>Dashboard</h1>
-            <img src="" alt="Home Icon"><button>Home</button>
-            <img src="" alt="Profile Icon"><buttom>Profile</buttom>
-            <img src="" alt="Messages Icon"><buttom>Messages</buttom>
-            <img src="" alt="History Icon"><buttom>History</buttom>
-            <img src="" alt="Tasks Icon"><buttom>Tasks</buttom>
-            <img src="" alt="Communities Icon"><buttom>Communities</buttom>
-            <img src="" alt="Settings Icon"><buttom>Settings</buttom>
-            <img src="" alt="Support Icon"><buttom>Support</buttom>
-            <img src="" alt="Privacy Icon"><buttom>Privacy</buttom> -->
+            <img src="./img/home.png" alt="Menu Icon"><h1>Dashboard</h1>
+            <img src="./img/home.png" alt="Home Icon"><a href="">Home</a>
+            <img src="./img/home.png" alt="Profile Icon"><a href="">Profile</a>
+            <img src="./img/home.png" alt="Messages Icon"><a href="">Messages</a>
+            <img src="./img/home.png" alt="History Icon"><a href="">History</a>
+            <img src="./img/home.png" alt="Tasks Icon"><a href="">Tasks</a>
+            <img src="./img/home.png" alt="Communities Icon"><a href="">Communities</a>
+            <img src="./img/home.png" alt="Settings Icon" class="topSpacer"><a href="" class="topSpacer">Settings</a>
+            <img src="./img/home.png" alt="Support Icon"><a href="">Support</a>
+            <img src="./img/home.png" alt="Privacy Icon"><a href="">Privacy</a>
         </div>
-        <div class="actionMenu">
-
+        <div class="header">
+            <div class="searchBar">
+                <img src="./img/home.png" alt="Search magnifying glass">
+                <input type="search">
+            </div>
+            <div class="userInfo">
+                <img src="./img/home.png" alt="Alert Icon">
+                <img src="./img/home.png" alt="Profile Pic">
+                <a href="">User Name</a>
+            </div>
+            <div class="userGreeting">
+                <img src="./img/home.png" alt="Profile Pic">
+                <p>Hi There,</p>
+                <a href="">User Name (@username)</a>
+            </div>
+            <div class="actionButtons">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
+            </div>
         </div>
-        <div class="wrapperContent">
+        <div class="mainContent">
+            <section class="activeProjects">
+                <h2>Your Projects</h2>
+                <div class="projectCard">
+                    <h3>Super Cool Project</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore 
+                      magna aliqua.
+                    </p>
+                    <img src="./img/home.png" alt="Favorite Icon">
+                    <img src="./img/home.png" alt="View Icon">
+                    <img src="./img/home.png" alt="Share Icon">
+                </div>
+                <div class="projectCard">
+                    <h3>Easy Peasy App</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore 
+                      magna aliqua.
+                    </p>
+                    <img src="./img/home.png" alt="Favorite Icon">
+                    <img src="./img/home.png" alt="View Icon">
+                    <img src="./img/home.png" alt="Share Icon">
+                </div>
+                <div class="projectCard">
+                    <h3>Less Cool Project</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore 
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                        consequat.
+                    </p>
+                    <img src="./img/home.png" alt="Favorite Icon">
+                    <img src="./img/home.png" alt="View Icon">
+                    <img src="./img/home.png" alt="Share Icon">
+                </div>
+                <div class="projectCard">
+                    <h3>Impossible App</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore 
+                      magna aliqua.
+                    </p>
+                    <img src="./img/home.png" alt="Favorite Icon">
+                    <img src="./img/home.png" alt="View Icon">
+                    <img src="./img/home.png" alt="Share Icon">
+                </div>
+                <div class="projectCard">
+                    <h3>Adblocker</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore 
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                        consequat.
+                    </p>
+                    <img src="./img/home.png" alt="Favorite Icon">
+                    <img src="./img/home.png" alt="View Icon">
+                    <img src="./img/home.png" alt="Share Icon">
+                </div>
+                <div class="projectCard">
+                    <h3>Money Maker</h3>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore 
+                      magna aliqua.
+                    </p>
+                    <img src="./img/home.png" alt="Favorite Icon">
+                    <img src="./img/home.png" alt="View Icon">
+                    <img src="./img/home.png" alt="Share Icon">
+                </div>
+            </section>
+            
+            <section class="announcements">
+                <h2>Announcements</h2>
+                <div class="announcementCard">
+                    <h3>Site Maintenance</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.
+                    </p>
+                    <hr>
+                    <h3>Community Share Day</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.
+                    </p>
+                    <hr>
+                    <h3>Upload Privacy Polity</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.
+                    </p>
+                </div>
+            </section>
+            <section class="trending">
+                <h2>Trending</h2>
+                <div class="trendingCard">
+                    <div class="trendingItem">
+                        <img src="./img/home.png" alt="User1 Profile Pic">
+                        <h3>@tegan</h3>
+                        <p>World Peace Builder</p>
+                    </div>
+                    <div class="trendingItem">
+                        <img src="./img/home.png" alt="User2 Profile Pic">
+                        <h3>@morgan</h3>
+                        <p>Super Cool Project</p>
+                    </div>
+                    <div class="trendingItem">
+                        <img src="./img/home.png" alt="User3 Profile Pic">
+                        <h3>@kendall</h3>
+                        <p>Life Changing App</p>
+                    </div>
+                    <div class="trendingItem">
+                        <img src="./img/home.png" alt="User4 Profile Pic">
+                        <h3>@alex</h3>
+                        <p>No Traffic Maker</p>
+                    </div>
+                </div>
+            </section>
             
         </div>
     </div>
