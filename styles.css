@@ -1,0 +1,18 @@
+.wrapper {
+    display: grid;
+}
+
+.menu {
+    background-color: blue;
+    height: 100px;
+}
+
+.actionMenu {
+    background-color: grey;
+    height: 100px;
+}
+
+.wrapperContent {
+    background-color: aqua;
+    height: 100px;
+}
