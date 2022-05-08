@@ -176,6 +176,12 @@ body {
     border-radius: 8px;
     border-left: 6px solid #0369a1;
     padding: 30px;
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+}
+
+.projectCard > h3 {
+    grid-column: 1 / 5;
 }
 
 .projectCard > p {
@@ -183,6 +189,15 @@ body {
     padding-top: 5px;
     line-height: 1.2;
     color:rgb(102, 102, 102);
+    grid-column: 1 / 5;
+}
+
+.projectCard > img {
+    justify-self: center;
+}
+
+.projectCard > img:first-of-type {
+    grid-column: 2/3;
 }
 
 .announcements {
