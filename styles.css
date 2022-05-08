@@ -156,7 +156,7 @@ body {
     grid-area: 1 / 1 / 3 / 2;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr repeat(3, 5fr);
+    grid-template-rows: 1fr repeat(3, 12fr);
     gap: 20px;
     margin: 20px 10px;
 }
@@ -185,7 +185,7 @@ body {
 
 .announcements {
     /* align-self: end; */
-    margin-top: 78px;
+    margin-top: 35px;
 }
 
 .announcements > h2 {
