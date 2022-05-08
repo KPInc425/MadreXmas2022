@@ -1,8 +1,14 @@
+@font-face {
+    font-family: Macondo;
+    src: url(./fonts/Macondo-Regular.ttf);
+}
+
 html {
     background-color: rgb(245, 245, 245);
     background-image: url(./img/ArchiveBGPic.png);
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: Macondo,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .card {
@@ -28,7 +34,7 @@ html {
 .card > img {
     display: block;
     margin: auto;
-    height: 800px;
+    height: 60vh;
     width: auto;
     border: 3px solid #0369a1;
 }
