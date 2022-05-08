@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Macondo,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .wrapper {
@@ -13,6 +13,11 @@ body {
     grid-template-rows: 1fr 6fr;
     grid-template-areas: "menu header"
                          "menu mainContent";
+}
+
+.profileIcon {
+    height: 40px;
+    width: auto;
 }
 
 .menu {
@@ -75,7 +80,7 @@ body {
     grid-template-columns: 1fr 8fr;
 }
 
-.userGreeting > img {
+.userGreeting > a:first-of-type {
     grid-area: 1 / 1 / 3 / 2;
     justify-self: end;
     align-self: center;
@@ -104,11 +109,13 @@ body {
     justify-self: end;
 }
 
-.searchBar > input {
+form > input {
     background-color: rgb(214, 214, 214);
     border: none;
     border-radius: 10px;
     margin: 0 10px 0 5px;
+    padding: 2px 10px 2px 10px;
+    width: 100%;
 }
 
 .userInfo {
@@ -140,7 +147,7 @@ body {
     border: none;
     margin: 0 clamp(5px, 10%, 25%);
     height: 30px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Macondo,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 700;
     background-color: #0ea5e9;
     color: white;
@@ -152,6 +159,7 @@ body {
     grid-area: mainContent;
     display: grid;
     grid-template-columns: 3.5fr 1fr;
+    row-gap: 30px;
 }
 
 .activeProjects {
@@ -201,7 +209,7 @@ body {
 }
 
 .announcements {
-    /* align-self: end; */
+    align-self: end;
     margin-top: 35px;
 }
 
@@ -234,7 +242,7 @@ hr {
 
 .trending {
     grid-row: 2 / 3;
-    align-self: end;
+    /* align-self: end; */
     margin-top: 10px;
     margin-bottom: 20px;
 }
@@ -245,7 +253,7 @@ hr {
 }
 
 .trendingCard {
-    background-color: red;
+    background-color: white;
     padding: 25px;
     border-radius: 8px;
     margin: 0 15px 0 5px;
@@ -261,6 +269,7 @@ hr {
 .trendingItem > img {
     grid-area: 1 / 1 / 3 / 2;
     align-self: center;
+    height: 35px;
 }
 
 .trendingItem > h3 {
