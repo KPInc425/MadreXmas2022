@@ -22,7 +22,7 @@ body {
 
 .menu {
     background-color: #0ea5e9;
-    height: 100vh;
+    /* height: 100vh; */
     grid-area: menu;
     display: grid;
     grid-template-columns: 1fr;
@@ -425,4 +425,11 @@ hr {
         align-self: flex-start;
         font-size: 50%;
     }
+}
+
+@media screen and (max-width: 420px) {
+    .menu {
+        height: 9vh;
+    }
+    
 }
