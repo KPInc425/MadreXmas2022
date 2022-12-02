@@ -8,6 +8,7 @@ body {
 }
 
 .wrapper {
+    height: 100vh;
     display: grid;
     grid-template-columns: 200px 5fr;
     grid-template-rows: 1fr 6fr;
