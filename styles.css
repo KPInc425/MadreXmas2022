@@ -19,10 +19,11 @@ body {
 .profileIcon {
     height: 40px;
     width: auto;
+    /* filter: invert(100%); */
 }
 
 .menu {
-    background-color: #0ea5e9;
+    background-color: #a10303;
     /* height: 100vh; */
     grid-area: menu;
     display: grid;
@@ -47,7 +48,7 @@ body {
 .menu > a {
     padding-top: 4px;
     font-size: large;
-    font-size: smaller;
+    /* font-size: smaller; */
     font-weight: 550;
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -82,16 +83,17 @@ body {
 }
 
 .header {
-    background-color: white;
+    background-color: rgba(22, 101, 16, 0.849);
     grid-area: header;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
     box-shadow: 0px 4px 2px -2px rgb(167, 167, 167);
     z-index: 1;
+    color: white;
 }
 
-.header > *{
+.header > * {
     align-self: center;
 }
 
@@ -115,7 +117,7 @@ body {
 
 .userGreeting > a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: large;
     font-weight: 550;
 }
@@ -130,7 +132,8 @@ body {
 }
 
 form > input {
-    background-color: rgb(214, 214, 214);
+    background: linear-gradient(to right, #ffa7a7 0%, #fc3c3c 100%);
+    color: white;
     border: none;
     border-radius: 10px;
     margin: 0 10px 0 5px;
@@ -140,7 +143,7 @@ form > input {
 
 .userInfo {
     justify-self: end;
-    margin-right: 50px;
+    margin: 0 25px;
     display: grid;
     grid-template-columns: 1fr 1fr 3fr;
     align-items: center;
@@ -150,8 +153,13 @@ form > input {
     text-decoration: none;
     margin-left: 15px;
     margin-top: 2px;
-    color: black;
+    color: white;
     font-weight: 550;
+}
+
+.userInfo > img, .searchBar > img {
+    filter: invert(100%);
+    padding: 0 5px;
 }
 
 .actionButtons {
@@ -169,24 +177,37 @@ form > input {
     height: 30px;
     font-family: Macondo,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 700;
-    background-color: #0ea5e9;
+    background-color: #a10303;
     color: white;
+    /* filter: invert(100%); */
 }
 
 
 .mainContent {
-    background-color: rgb(231, 231, 231);
+    background: linear-gradient(to bottom, #ffa7a7 0%, #ff7070 100%);
     grid-area: mainContent;
     display: grid;
     grid-template-columns: 3.5fr 1fr;
     row-gap: 30px;
 }
 
+h2 {
+    font-size: 150%;
+    margin-left: 12px;
+    color: white;
+    text-shadow: 2px 2px 2px #a10303;
+}
+
+h3 {
+    font-size: 125%;
+    text-shadow: 2px 2px 2px #a10303;
+}
+
 .activeProjects {
     grid-area: 1 / 1 / 3 / 2;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr repeat(3, 12fr);
+    grid-template-rows: 1fr repeat(4, 12fr);
     gap: 20px;
     margin: 20px 10px;
 }
@@ -199,33 +220,59 @@ form > input {
 }
 
 .projectCard {
-    background-color: white;
-    box-shadow: 2px 2px 3px rgb(167, 167, 167);
+    background-color: rgba(22, 101, 16, 0.849); 
     border-radius: 8px;
-    border-left: 6px solid #0369a1;
+    border-left: 6px solid #a10303;
     padding: 30px;
     display: grid;
     grid-template-columns: 4fr 1fr 1fr 1fr;
+    color: white;
 }
 
 .projectCard > h3 {
     grid-column: 1 / 5;
+    font-size: x-large;
 }
 
 .projectCard > p {
-    font-size: small;
+    /* font-size: small; */
     padding-top: 5px;
     line-height: 1.2;
-    color:rgb(102, 102, 102);
+    color:rgb(224, 224, 224);
     grid-column: 1 / 5;
+}
+
+.projectCard a {
+    color: red;
+    text-decoration: none;
+    font-size: 110%;;
 }
 
 .projectCard > img {
     justify-self: center;
+    filter: invert(100%);
+    background-color: #5efcfc;
+    border-radius: 8px;
+    border: 1px inset #5efcfc;
+    padding: 5px;
+    margin: 0 3px;
 }
 
 .projectCard > img:first-of-type {
     grid-column: 2/3;
+}
+
+.faveButton {
+    mask-image: url("./img/star-plus-outline.png");
+    mask-size: contain;
+}
+.viewButton {
+    mask-image: url("./img/eye-plus-outline.png");
+    mask-size: contain;
+}
+.shareButton {
+    mask-image: url("./img/source-fork.png");
+    mask-size: contain;
 }
 
 .announcements {
@@ -238,26 +285,30 @@ form > input {
 }
 
 .announcementCard {
-    background-color: white;
+    background-color: #a10303;
     margin: 0 15px 0 5px;
     padding: 25px;
     border-radius: 8px;
     height: fit-content;
     box-shadow: 2px 2px 3px rgb(167, 167, 167);
+    color: white;
 }
 
 .announcementCard > h3 {
     font-size: small;
+    text-shadow: 2px 2px 2px rgba(22, 101, 16, 0.849);
+    margin-bottom: 5px;
 }
 
 .announcementCard > p {
     font-size: small;
-    color:rgb(102, 102, 102);
+    color:rgb(220, 220, 220);
+    line-height: 1.4;
 }
 
 hr {
     margin: 15px 0;
-    border-color: #0369a1;
+    border-color: rgba(22, 101, 16, 0.849);
 }
 
 .trending {
@@ -273,11 +324,12 @@ hr {
 }
 
 .trendingCard {
-    background-color: white;
+    background-color: #a10303;
     padding: 25px;
     border-radius: 8px;
     margin: 0 15px 0 5px;
     box-shadow: 2px 2px 3px rgb(167, 167, 167);
+    color: white;
 }
 
 .trendingItem {
@@ -298,8 +350,57 @@ hr {
 
 .trendingItem > p {
     font-size: small;
-    color: rgb(102, 102, 102);
+    color: rgb(199, 199, 199);
 }
+
+/* Snow Animations */
+@keyframes fall {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        top: 100vh;
+        opacity: 1;
+    }
+}
+
+@keyframes sway {
+    0% {
+        margin-left: 0;
+    }
+    25% {
+        margin-left: 50px;
+    }
+    50% {
+        margin-left: -50px;
+    }
+    75% {
+        margin-left: 50px;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+
+.snowContainer {
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transition: opacity 500ms;
+    width: 100%;
+    z-index: 10;
+}
+
+.snow {
+    animation: fall ease-in infinite, sway ease-in-out infinite;
+    color: rgb(217, 244, 255);
+    position: absolute;
+}
+
 
 @media screen and (max-width: 800px) {
     .wrapper {
